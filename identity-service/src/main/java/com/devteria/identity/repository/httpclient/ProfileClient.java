@@ -12,4 +12,6 @@ import com.devteria.identity.dto.response.UserProfileResponse;
 public interface ProfileClient {
     @PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
     UserProfileResponse createProfile(@RequestBody ProfileCreationRequest request);
+
+    // update
 }
